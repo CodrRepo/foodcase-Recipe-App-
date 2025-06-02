@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: gilroy;
+  font-size: clamp(14px, 1vw, 18px);
+  /* background-color: #FFFDF6; */
+}
+
+.invert-color{
+  filter: invert(1);
+}
+
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('./assets/fonts/DancingScript_Complete/Fonts/TTF/DancingScript-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dancing-script-font{
+  font-family: "Dancing Script";
+}
+
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
